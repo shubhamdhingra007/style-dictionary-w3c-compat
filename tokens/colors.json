@@ -1,0 +1,22 @@
+{
+    "color": {
+        "violet": {
+            "$value": "#7c3aed",
+            "$type": "color",
+            "$description": "Violet description"
+        },
+        "rose": {
+            "$type": "color",
+            "$value": "#e11d48"
+        },
+        "grey": {
+            "100": {
+                "$type": "color",
+                "$value": "#fefefe"
+            }
+        }
+    },
+    "animate": {
+        "$value": "3s ease all"
+    }
+}

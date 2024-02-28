@@ -1,0 +1,18 @@
+{
+    "alias": {
+        "color": {
+            "primary": {
+                "$type": "color",
+                "$value": "{base.color.violet}"
+            },
+            "secondary": {
+                "$type": "color",
+                "$value": "{base.color.rose}"
+            },
+            "background": {
+                "$type": "color",
+                "$value": "{base.color.grey.100}"
+            }
+        }
+    }
+}

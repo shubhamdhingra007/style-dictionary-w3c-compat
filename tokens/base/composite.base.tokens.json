@@ -1,0 +1,25 @@
+{
+    "base": {
+        "composite": {
+            "typo": {
+                "$type": "typography",
+                "$value": {
+                    "fontFamily": "Graphik",
+                    "fontSize": "20px",
+                    "fontWeight": 600,
+                    "lineHeight": 1.6
+                }
+            },
+            "dropShadow": {
+                "$type": "shadow",
+                "$value": {
+                    "color": "#345677",
+                    "offsetX": "0px",
+                    "offsetY": "1px",
+                    "blur": "2px",
+                    "spread": "0px"
+                }
+            }
+        }
+    }
+}
