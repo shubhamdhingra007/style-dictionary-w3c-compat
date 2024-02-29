@@ -2,9 +2,8 @@
     "base": {
         "color": {
             "violet": {
-                "$value": "#7c3aed",
                 "$type": "color",
-                "$description": "Violet description"
+                "$value": "#7c3aed"
             },
             "rose": {
                 "$type": "color",

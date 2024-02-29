@@ -1,0 +1,49 @@
+{
+    "base": {
+        "all-simple": {
+            "color-dummy": {
+                "$type": "color",
+                "$value": "#3f51f5",
+                "$description": "Simple token type 'color'"
+            },
+            "dimension-dummy": {
+                "$type": "dimension",
+                "$value": "20px",
+                "$description": "Simple token type 'dimension'"
+            },
+            "fontFamily-dummy": {
+                "$type": "fontFamily",
+                "$value": [
+                    "'Open Sans'",
+                    "Graphik"
+                ],
+                "$description": "Simple token type 'fontFamily'"
+            },
+            "fontWeight-dummy": {
+                "$type": "fontWeight",
+                "$value": 600,
+                "$description": "Simple token type 'fontWeight'"
+            },
+            "duration-dummy": {
+                "$type": "duration",
+                "$value": "3s",
+                "$description": "Simple token type 'duration'"
+            },
+            "cubicBezier-dummy": {
+                "$type": "cubicBezier",
+                "$value": [
+                    "0.4",
+                    "0",
+                    "0.2",
+                    "1"
+                ],
+                "$description": "Simple token type 'cubicBezier'"
+            },
+            "number-dummy": {
+                "$type": "number",
+                "$value": 10,
+                "$description": "Simple token type 'number'"
+            }
+        }
+    }
+}

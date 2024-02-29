@@ -1,0 +1,73 @@
+{
+    "base": {
+        "all-composite": {
+            "typography-dummy": {
+                "$type": "typography",
+                "$description": "COMPOSITE token type 'typography'. Aliasing at base level but ignore. Just wanted to test if it works or not",
+                "$value": {
+                    "fontFamily": "{base.all-simple.fontFamily-dummy}",
+                    "fontSize": "20px",
+                    "fontWeight": 600,
+                    "lineHeight": 1.6,
+                    "letterSpacing": "0.8px"
+                }
+            },
+            "shadow-dummy": {
+                "$type": "shadow",
+                "$description": "COMPOSITE token type 'shadow'",
+                "$value": {
+                    "color": "#345677",
+                    "offsetX": "0px",
+                    "offsetY": "1px",
+                    "blur": "2px",
+                    "spread": "0px"
+                }
+            },
+            "border-dummy": {
+                "$type": "border",
+                "$description": "COMPOSITE token type 'border'. Aliasing at base level but ignore. Just wanted to test if it works or not",
+                "$value": {
+                    "color": "{base.color.rose}",
+                    "width": "2px",
+                    "style": "solid"
+                }
+            },
+            "gradients-blue-to-red-dummy": {
+                "$type": "gradient",
+                "$description": "COMPOSITE token type 'gradient'",
+                "$value": [
+                    {
+                        "color": "#0000ff",
+                        "position": 0
+                    },
+                    {
+                        "color": "#ff0000",
+                        "position": 1
+                    }
+                ]
+            },
+            "transition-easeInOut-dummy": {
+                "$type": "transition",
+                "$description": "COMPOSITE token type 'transition'",
+                "$value": {
+                    "duration": "200ms",
+                    "delay": "0ms",
+                    "timingFunction": [0.5, 0, 1, 1]
+                }
+            },
+            "strokeStyle-string--dummy": {
+                "$type": "strokeStyle",
+                "$description": "COMPOSITE token type 'strokeStyle' with string value",
+                "$value": "dashed"
+            },
+            "strokeStyle-object--dummy": {
+                "$type": "strokeStyle",
+                "$description": "COMPOSITE token type 'strokeStyle' with object value",
+                "$value": {
+                    "dashArray": ["0.5rem", "0.25rem"],
+                    "lineCap": "round"
+                 }
+            }
+        }
+    }
+}

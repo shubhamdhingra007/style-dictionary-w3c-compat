@@ -1,13 +1,18 @@
 import StyleDictionary from 'style-dictionary-utils';
 
+const buildPathPrefix = 'dist/'
+
 const config = {
     source: ["tokens/**/*.json"],
     platforms: {
         css: {
-            buildPath: "dist/",
-            // transformGroup: 'css',
-            //  "font/css"
-            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgb",],
+            buildPath: buildPathPrefix,
+            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgb",
+                "font/css", // needed for typography composite token
+                "shadow/css", // needed for shadow composite token
+                "border/css", // needed for border composite token
+                "gradient/css", // needed for gradient composite token
+            ],
             files: [
                 {
                     format: 'css/variables',
@@ -28,7 +33,7 @@ const config = {
             ]
         },
         js: {
-            buildPath: "dist/",
+            buildPath: buildPathPrefix,
             transforms: ["attribute/cti", "name/cti/pascal", "dimension/pixelToRem", "color/rgb",],
             files: [
                 {
@@ -50,10 +55,13 @@ const config = {
             ]
         },
         less: {
-            buildPath: "dist/",
-            // transformGroup: 'css',
-            //  "font/css"
-            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgb",],
+            buildPath: buildPathPrefix,
+            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgb",
+                "font/css", // needed for typography composite token
+                "shadow/css", // needed for shadow composite token
+                "border/css", // needed for border composite token
+                "gradient/css", // needed for gradient composite token
+            ],
             files: [
                 {
                     format: 'less/variables',
