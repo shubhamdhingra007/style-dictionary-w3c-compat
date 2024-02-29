@@ -7,7 +7,7 @@ const config = {
     platforms: {
         css: {
             buildPath: buildPathPrefix,
-            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgb",
+            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgba",
                 "font/css", // needed for typography composite token
                 "shadow/css", // needed for shadow composite token
                 "border/css", // needed for border composite token
@@ -34,7 +34,7 @@ const config = {
         },
         js: {
             buildPath: buildPathPrefix,
-            transforms: ["attribute/cti", "name/cti/pascal", "dimension/pixelToRem", "color/rgb",],
+            transforms: ["attribute/cti", "name/cti/pascal", "dimension/pixelToRem", "color/rgba",],
             files: [
                 {
                     format: 'javascript/es6',
@@ -56,7 +56,7 @@ const config = {
         },
         less: {
             buildPath: buildPathPrefix,
-            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgb",
+            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgba",
                 "font/css", // needed for typography composite token
                 "shadow/css", // needed for shadow composite token
                 "border/css", // needed for border composite token
