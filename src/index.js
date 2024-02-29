@@ -1,5 +1,18 @@
 import StyleDictionary from 'style-dictionary-utils';
 
+StyleDictionary.registerTransform({
+    name: 'test/transformer',
+    type: `value`,
+    transitive: true,
+    transformer: ({ value, ...args }) => {
+        console.log('value >>', value)
+        console.log('---------')
+        console.log('args >>', args)
+        console.log('---------')
+        return value
+    }
+})
+
 const buildPathPrefix = 'dist/'
 
 const config = {
@@ -7,7 +20,7 @@ const config = {
     platforms: {
         css: {
             buildPath: buildPathPrefix,
-            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgba",
+            transforms: ["attribute/cti", "name/cti/kebab", "dimension/pixelToRem", "color/rgba", "test/transformer",
                 "font/css", // needed for typography composite token
                 "shadow/css", // needed for shadow composite token
                 "border/css", // needed for border composite token
